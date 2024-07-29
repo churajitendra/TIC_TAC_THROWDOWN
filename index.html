@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="header">
+        <div class="logo-cont">
+            <img src="assets/images/tictactoe.png" alt="LOGO" class="logo">
+            <h1>TIC TAC THROWDOWN</h1>
+        </div>
+        <div class="nav-links">
+
+            <label class="ui-switch">
+                <input type="checkbox" id="toggleBtn" onclick="toggleTheme()">
+                <div class="slider">
+                    <div class="circle"></div>
+                </div>
+            </label>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="head">
+                <h2>TIC TAC THROWDOWN</h2>
+            </div>
+            <div class="tictactoe">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+            <button class="game-btn" onclick="resetGame()">RESET GAME</button>
+        </div>
+        <div class="win-msg" id="winner-msg">
+            <h1 id="winner"></h1>
+            <p id="counter">Score</p>
+            <button onclick="ok()" class="game-btn">OK</button>
+        </div>
+    </main>
+    <section class="footer">&copy; 2024 Rights Reserved & Made With ❤️ by <strong><em>JITENDRA CHURA</em></strong>
+    </section>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
